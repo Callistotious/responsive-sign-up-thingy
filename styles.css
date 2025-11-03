@@ -110,6 +110,8 @@ li::before {
     flex: 1;
     color: var(--Red);
     font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .email-place {
@@ -120,9 +122,14 @@ li::before {
     border-radius: 7px;
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .email-place:focus {
+  outline: none; 
+}
+
+.email-hidden:focus {
   outline: none; 
 }
 
@@ -203,6 +210,18 @@ li::before {
 .error-hidden {
     position: absolute;
     visibility: hidden;
+}
+
+.email-hidden {
+    width: 100%;
+    padding: 15px;
+    color: var(--Red);
+    border: 1px solid var(--Red);
+    background-color:hsla(4, 100%, 67%, 0.372) ;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 @media (min-width: 800px) {
